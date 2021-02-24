@@ -7,7 +7,7 @@ def main(config):
     for i in range(1, 12):
         config_new = {
             "log_name": f"DLAAgent_dist_small_{i}.log",
-            "train_file": f"assets/data/dla_cifar/dist_small/Dist_{i}.txt",
+            "train_file": f"assets/data/dla_cifar/dist_small/dist_{i}.txt",
             "checkpoint_name": f"checkpoint-{i}.pth",
         }
         cfg.update(config_new)

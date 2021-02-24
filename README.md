@@ -1,6 +1,6 @@
 # The Impact of Imbalanced Training Data for Convolutional Neural Networks
 
-## 1.描述
+## 描述
 参加一些算法比赛的时候，发现举办方提供的数据集基本上全都存在样本不均衡的情况，
 有的甚至最多的一类和最少的一类数据数据差距在千倍左右。
 比如 [2021全国数字生态创新大赛-高分辨率遥感影像分割](https://tianchi.aliyun.com/competition/entrance/531860/introduction) ，
@@ -16,7 +16,7 @@
 文章是用CIFAR-10来做实验的。CIFAR-10共有10类（airplane，automobile，bird，cat，deer，dog， frog，horse，ship，truck），每一类含有5000张训练图片，1000张测试图片，共60000条数据。
 
                                           
-## 2.实验设置
+## 实验设置
 第一个实验：
 ![数据分布](assets/md_file/distributions.png)
 
@@ -55,6 +55,9 @@
 
 对于以上几条原因，分别进行针对性的实验。
 ### 1、数据量减少10倍。
+
+数据量减小如下：
+![数量分布](assets/md_file/dist_small.png)
 
 ### 2、扩大数据差异
 
