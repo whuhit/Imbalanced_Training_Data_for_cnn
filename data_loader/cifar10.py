@@ -82,7 +82,7 @@ if __name__ == '__main__':
     for i in range(1, 12):
         log = Plog(f"../assets/data/dla_cifar/cifar10_small/dist_{i}.txt", cover=True)
         count = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0}
-        for line in open("../assets/data/dla_cifar/cifar10/train.txt"):
+        for line in open("../assets/data/dla_cifar/dist_default/train.txt"):
             label = int(line.split()[1])
             count[label] += 1
             if count[label] > nums_array[i - 1][label]:
