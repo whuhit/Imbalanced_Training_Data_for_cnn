@@ -6,8 +6,8 @@ import numpy as np
 
 
 def print_res_acc():
-    for i in range(12, 16):
-        file = f"DLAAgent_diff_huge_{i}.log"
+    for i in range(1, 12):
+        file = f"DLAAgent_simple_net_{i}.log"
         best_acc = float(
             open(f"logs/{file}").read().splitlines()[-1].split("best acc: ")[-1])
 
