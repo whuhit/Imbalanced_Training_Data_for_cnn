@@ -8,7 +8,8 @@ from torch import nn
 import torch.optim as optim
 
 from agents.base import BaseAgent
-from graphs.models.dla import DLA
+# from graphs.models.dla import DLA
+from graphs.models.cifar_cuda_convnet import Net
 from data_loader.cifar10 import Cifar10DataLoader
 from utils.torch_utils import select_device, seed_everything
 
@@ -33,7 +34,7 @@ class DLAAgent(BaseAgent):
         self.device = select_device()
 
         # define models
-        self.model = DLA().to(self.device)
+        self.model = Net().to(self.device)
 
         # define data_loader
         self.data_loader = Cifar10DataLoader(config=self.config)
